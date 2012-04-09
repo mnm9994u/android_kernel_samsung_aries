@@ -383,6 +383,12 @@ config SAMSUNG_P1LN
 endchoice
 endif
 
+config S5P_HUGEMEM
+       bool "select Hugemem memory config"
+       default n
+       help 
+	Enable 387MB memory config. Works on Slim or patched ROM's
+
 config S5PV210_SETUP_FB
 	bool
 	depends on FB_S3C
